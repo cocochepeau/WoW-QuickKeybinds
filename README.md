@@ -99,6 +99,8 @@ Run packaging checks with `python -m unittest discover -s tests -p 'test_*.py'`.
 
 ## Automated releases
 
-Once this repository is hosted on GitHub, every push to `main` runs the addon, locale and packaging tests and builds `QuickKeybinds-<version>.zip`. The version comes from `## Version` in `QuickKeybinds.toc`.
+Every push to `main` runs the addon, locale and packaging tests and builds `QuickKeybinds-<version>.zip`. The version comes from `## Version` in `QuickKeybinds.toc`.
 
 If that version has no GitHub release yet, the workflow creates tag `v<version>` and publishes a release with the installable ZIP and generated release notes. Existing releases stay unchanged; bump the TOC version to publish another release. The workflow can also be run manually on `main`. It uses GitHub's built-in token, with no custom release secret required.
+
+Download the latest installable ZIP from [GitHub Releases](https://github.com/cocochepeau/WoW-QuickKeybinds/releases/latest). View runs or start a manual build from [the release workflow](https://github.com/cocochepeau/WoW-QuickKeybinds/actions/workflows/release.yml).
