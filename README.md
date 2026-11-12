@@ -93,7 +93,7 @@ python tests/run_tests.py
 python build.py
 ```
 
-The ZIP contains only QuickKeybinds runtime files and documentation. The supplied `Bartender4-4.18.4` folder is a reference and is never bundled. QuickKeybinds is an independent implementation; no Bartender core or bundled library code is included.
+The ZIP contains only QuickKeybinds runtime files and documentation. QuickKeybinds uses native WoW APIs and requires no bundled libraries or other addons.
 
 Run packaging checks with `python -m unittest discover -s tests -p 'test_*.py'`. To write the ZIP to a separate directory, use `python build.py --output-dir dist`.
 

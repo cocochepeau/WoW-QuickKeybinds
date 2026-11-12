@@ -7,6 +7,3 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 *.tmp
-
-# Supplied third-party reference source; not part of QuickKeybinds
-/Bartender4-*/

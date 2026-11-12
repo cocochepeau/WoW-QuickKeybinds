@@ -1,4 +1,4 @@
-"""Build a clean install ZIP without the Bartender reference or development files."""
+"""Build a clean install ZIP containing runtime files and documentation."""
 
 import argparse
 from pathlib import Path

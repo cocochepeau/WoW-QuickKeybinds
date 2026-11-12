@@ -26,7 +26,7 @@ class ReleaseTests(unittest.TestCase):
                 for name in ("README.md", "TESTING.md", "LICENSE"):
                     self.assertIn(f"QuickKeybinds/{name}", names)
                 self.assertFalse(any(n.endswith((".py", ".png", ".zip", ".yml")) for n in names))
-                self.assertFalse(any("Bartender" in n or "/tests/" in n or "/.git/" in n for n in names))
+                self.assertFalse(any("/tests/" in n or "/.git/" in n for n in names))
                 package.extractall(directory)
             toc = (Path(directory) / "QuickKeybinds/QuickKeybinds.toc").read_text()
             self.assertIn(f"## Version: {version}", toc)
@@ -38,7 +38,7 @@ class ReleaseTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / "addon"
             shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns(
-                ".git", "dist", "*.zip", "__pycache__", "Bartender4-*"))
+                ".git", "dist", "*.zip", "__pycache__"))
             (root / "UI.lua").unlink()
             with self.assertRaises(FileNotFoundError):
                 builder.build_release(root, Path(directory) / "output")
