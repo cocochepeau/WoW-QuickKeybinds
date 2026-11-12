@@ -1,0 +1,22 @@
+## Interface: 16001
+## Title: QuickKeybinds
+## Notes: Hover binding, searchable bindings, keyboard and gamepad layouts, profiles and binding drafts for WoW Forever.
+## Notes-frFR: Raccourcis au survol, recherche, clavier et manette, profils et modifications avec validation pour WoW Forever.
+## Notes-deDE: Tastenbelegung per Mauszeiger, Suche, Tastatur- und Gamepad-Layouts, Profile und Entwürfe für WoW Forever.
+## Author: QuickKeybinds
+## Version: 1.0.9
+## SavedVariables: QuickKeybindsDB
+## IconTexture: Interface\Icons\INV_Misc_Key_03
+
+Locale.lua
+Locales/enUS.lua
+Locales/frFR.lua
+Locales/deDE.lua
+Engine.lua
+Targets.lua
+Theme.lua
+Keyboard.lua
+Gamepad.lua
+UI.lua
+Capture.lua
+Main.lua
